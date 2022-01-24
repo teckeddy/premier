@@ -1,0 +1,71 @@
+main{
+    min-height: 100vh;
+}
+
+.hero{
+    position: relative;
+    background:linear-gradient(rgba(0, 3, 7, 0.7), rgba(10, 0, 9, 0.6)), url("../images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    &_text{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        margin: 0 auto;
+        text-align: center;
+        .hero-heading{
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 5rem;
+            width: 100%;
+            text-shadow: 1px 2px rgb(5, 5, 5);
+            line-height: 1.0;
+            font-weight: 600;
+        }
+        .lead{
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 400;
+
+        }
+    }
+}
+.find-courses{
+    padding: 1rem;
+    .course-heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            width: 50px;
+            height: 50px;
+        }
+        .lead{
+            text-align: center;
+            span{
+                font-weight: 700;
+                color: rgb(8, 7, 7);
+            }
+
+    }
+   
+   } 
+   .courses-form{
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 1rem;
+       outline: 1px solid rgb(209, 204, 204);
+       border-radius: 10px;
+       box-shadow: 1px 2px 3px rgb(155, 149, 149);
+   }
+}
+@media screen and(max-width: 768px) {
+    .hero-heading{
+        font-size: 3.5rem !important;
+    }
+
+    
+}

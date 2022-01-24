@@ -1,0 +1,23 @@
+.about_hero{
+    background:linear-gradient(rgba(11, 11, 12, 0.6), rgba(3, 0, 2, 0.3)), url("../images/about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+}
+.about{
+    padding: 10px;
+    .about-heading{
+        text-align: center;
+    }
+    &_text{
+        max-width: 800px;
+        text-align: center;
+        padding: 1rem;
+        margin: 0 auto;
+        background-color: rgb(238, 236, 236);
+        .lead-text{
+            font-size: 1.5rem;
+        }
+    }
+}
